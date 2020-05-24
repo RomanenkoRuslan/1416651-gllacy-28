@@ -9,12 +9,22 @@
   <header>
   	<nav>
   	  <a href="index.html">
-  		  <img src="img/logo.png" width="100" height="50" alt="Глейси">
+  		<img src="img/logo.png" width="100" height="50" alt="Глейси">
   	  </a>
   	  <ul>
-  		  <li><a href="catalog.html">Каталог</a></li>
-  		  <li><a href="#">Доставка и оплата</a></li>
-  		  <li><a href="#">О компании</a></li>
+        <li>
+          <a href="catalog.html">Каталог</a></li>
+          <ul class="visually-hidden">
+            <li><span><a href="#">Новинки</a></span>
+            <hr>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+  		<li><a href="#">Доставка и оплата</a></li>
+  		<li><a href="#">О компании</a></li>
   	  </ul>
   	</nav>
     <ul>
@@ -148,25 +158,22 @@
 
   <section>
     <h2>Корзина</h2>
-    <form action="https://echo.htmlacademy.ru" method="get">
       <ul>
         <li>
-          <img src="img/cross-small.svg"  width="11" height="11" alt="">
+          <input type="image" src="img/cross-small.svg"  width="11" height="11" alt="">
           <img src="img/product-1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом">
           <h3>Пломбир с апельсиновым джемом</h3>
           <p>1,5 кг х <span>200 руб.</span></p>
           <p>300 руб.</p>
         </li>
         <li>
-          <img src="img/cross-small.svg"  width="11" height="11" alt="">
+          <input type="image" src="img/cross-small.svg"  width="11" height="11" alt="">
           <img src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
           <h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
           <p>1,5 кг х <span>300 руб.</span></p>
           <p>450 руб.</p>
         </li>
       </ul>
-    </form>
-    <hr>
     <p>Итого:750 руб.</p>
     <a href="#">Оформить заказ</a>
   </section>
