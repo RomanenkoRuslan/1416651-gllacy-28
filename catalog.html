@@ -45,6 +45,56 @@
   	<h1>Сливочное мороженое</h1>
     <section>
       <h2>Фильтр мороженого</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+      	<p>Сортировка:</p>
+        <select name="filter">
+          <option value="popular">по популярности</option>
+          <option value="price">по цене</option>
+        </select>  
+
+          <!-- диапазон выбора цены -->
+          <!-- я не знаю как сделать 2 ползунка в range -->
+          
+        <p>Жирность:</p>
+        <label>
+          <input type="radio" name="fat" value="zero-percent">
+           0%
+        </label>
+        <label>
+          <input type="radio" name="fat" value="before-ten-percent" checked>
+           до 10%
+        </label>
+        <label>
+          <input type="radio" name="fat" value="before-thirty-percent">
+          до 30%
+        </label>
+        <label>
+          <input type="radio" name="fat" value="after-thirty-percent">
+          выше 30%
+        </label>
+        <p>Наполнители:</p>
+        <label>
+        	<input type="checkbox" name="chocolate" checked="">
+        	шоколадные
+        </label>
+        <label>
+        	<input type="checkbox" name="sugar-powders" checked="">
+        	сахарные присыпки
+        </label>
+        <label>
+        	<input type="checkbox" name="fruits">
+        	фрукты
+        </label>
+        <label>
+        	<input type="checkbox" name="syrups">
+        	сиропы
+        </label>
+        <label>
+        	<input type="checkbox" name="jams">
+        	джемы
+        </label>
+        <button type="submit">Применить</button>
+      </form>
     </section>
   	<section>
   		<h2>Каталог</h2>
@@ -52,62 +102,62 @@
   			<li>
   		    <img src="img/product-1.jpg" width="267" height="320" alt="Сливочное с апельсиновым джемом">
   		    310 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+  		    <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-2.jpg" width="267" height="320" alt="Сливочно-кофейное">
   		    380 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочно-кофейное с кусочками шоколада</h3>
+  		    <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-3.jpg" width="267" height="320" alt="Сливочно-клубничное">
   		    355 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+  		    <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-4.jpg" width="267" height="320" alt="Сливочное крем-брюле">
   		    415 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+  		    <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-5.jpg" width="267" height="320" alt="Сливочное с брусничным джемом">
   		    325 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочное с брусничным джемом</h3>
+  		    <h3><a href="#">Сливочное с брусничным джемом</a></h3>
   		  </li>
   		  <li>
   		   <img src="img/product-6.jpg" width="267" height="320" alt="Сливочно-черничное">
   		    410 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочно-черничное с цельными ягодами черники</h3>
+  		    <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-7.jpg" width="267" height="320" alt="Сливочно-лимонное">
   		    315 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+  		    <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-8.jpg" width="267" height="320" alt="Сливочное с шоколадной стружкой">
   		    320 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочное с шоколадной стружкой</h3>
+  		    <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
   		  </li>
   		  <li>
   		  	<img src="img/product-9.jpg" width="267" height="320" alt="Сливочно-ванильное">
   		    440 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочно-ванильное с кусочками шоколада</h3>
+  		    <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-10.jpg" width="267" height="320" alt="Сливочноe с ментоловым сиропом">
   		    435 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочноe с ментоловым сиропом</h3>
+  		    <h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-11.jpg" width="267" height="320" alt="Сливочное с кусочками черного шоколада">
   		    355 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочное с кусочками черного шоколада</h3>
+  		    <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
   		  </li>
   		  <li>
   		    <img src="img/product-12.jpg" width="267" height="320" alt="Сливочное с мятным сиропом">
   		    420 &#8381;<span>&sol;кг</span>
-  		    <h3>Сливочное с мятным сиропом</h3>
+  		    <h3><a href="#">Сливочное с мятным сиропом</a></h3>
   		  </li>
   		</ul>
   	</section>
