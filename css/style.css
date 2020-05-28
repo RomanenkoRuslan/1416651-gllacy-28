@@ -1,0 +1,189 @@
+/*Variables*/
+
+:root {
+	--basic-black: #323232;
+	--basic-white: #FFFFFF;
+	--basic-gray: #999999;
+
+	--background-green: #849D8F;
+	--background-gray: #8996A6;
+	--background-brown: #9D8B84;
+
+    --background-light-pink: #FBDED7;
+    --background-neutral-pink: #F6B5A5;
+	--background-dark-pink: #D07058;
+
+	--link-light-red: #FFBC9E;
+	--link-red: #FFBC9E;
+}
+
+/*Global*/
+
+body {
+	min-width: 1200px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: var(--basic-white);
+	background-color: var(--background-green);
+	background-position: top;
+	background-repeat: no-repeat; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: var(--basic-white);
+}
+
+ul {
+	list-style: none;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+/*Header*/
+
+.site-navigation,
+.user-navigation {
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.site-navigation a:hover:not(.now),
+.site-navigation a:focus:not(.now) {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	width: 61px;
+    height: 11px;
+    border-radius: 26px;
+    padding: 9px 13px 11px 13px;
+}
+
+.site-navigation a:active:not(.now) {
+	background: #EDEDED;
+    box-shadow: inset 0px 2px 1px #696969;
+    border-radius: 26px;
+}
+
+.user-navigation {
+	font-size: 14px;
+}
+
+.user-navigation a {
+	text-decoration: none;
+	width: 92px;
+    height: 32px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+	color: var(--basic-black);
+	width: 92px;
+    height: 32px;
+    background: var(--basic-white);
+    border-radius: 20px;
+}
+
+p .phone-number {
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+/*Main*/
+
+.features p {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.features,
+.recipe,
+.recipe a,
+.mailing {
+	color: var(--basic-black);
+}
+
+.recipe {
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.recipe a {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+/*Footer*/
+
+.we-list {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.we-list li:first-child{
+	font-weight: bold;
+}
+
+.academy {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/*Catalog-header*/
+
+li .now {
+	background-color: var(--background-dark-pink);
+	width:61px;
+	height:11px;
+	border-radius: 26px;
+	padding: 9px 14px  11px 14px;
+}
+
+/*Catalog-main*/
+
+.way {
+	font-size: 14px;
+    line-height: 16px;
+}
+
+.title {
+	font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.catalog h3 {
+	font-weight: 500;
+	width: 267px;
+    text-align: center;
+}
+
+.catalog-list a:hover {
+	color: var(--link-light-red);
+}
+
+.catalog-list p {
+	font-weight: bold;
+    font-size: 45px;
+}
+
+.catalog-list span {
+	font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+}
