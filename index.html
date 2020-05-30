@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normlize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -16,8 +16,8 @@
   		</a>
   		<ul class="site-navigation">
         <li>
-          <a href="catalog.html" class="new">Каталог</a>
-          <ul>
+          <a href="catalog.html">Каталог</a>
+          <ul class="visually-hidden">
             <li><span><a href="#">Новинки</a></span></li>
             <hr>
             <li><a href="#">Сливочное</a></li>
@@ -33,7 +33,7 @@
     <ul class="user-navigation">
       <li><a href="#">Поиск</a></li>
       <li><a href="#">Вход</a></li>
-      <li><a href="#">Корзина</a></li>
+      <li><a href="#" class="basket">Корзина</a></li>
     </ul>
     <p>
       с 10 до 20, ежедневно
@@ -138,7 +138,7 @@
       </p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <input type="email" name="letter-email" placeholder="email@example.com">
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button">Отправить</button>
       </form>
   	</section>
     <section class="address">
