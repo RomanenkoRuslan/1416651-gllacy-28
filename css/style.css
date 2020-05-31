@@ -9,8 +9,8 @@
 	--background-gray: #8996A6;
 	--background-brown: #9D8B84;
 
-    --background-light-pink: #FBDED7;
-    --background-neutral-pink: #F6B5A5;
+  --background-light-pink: #FBDED7;
+  --background-neutral-pink: #F6B5A5;
 	--background-dark-pink: #D07058;
 
 	--link-light-red: #FFBC9E;
@@ -55,7 +55,7 @@ a {
 }
 
 .site-navigation a {
-    padding: 9px 13px 11px 13px;
+  padding: 9px 13px 11px 13px;
 }
 
 .site-navigation a:hover:not(.navigation-link-active),
@@ -64,14 +64,14 @@ a {
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 	width: 61px;
-    border-radius: 26px;
-    padding: 9px 13px 11px 13px;
+  border-radius: 26px;
+  padding: 9px 13px 11px 13px;
 }
 
 .site-navigation a:active:not(.navigation-link-active) {
 	background: #EDEDED;
-    box-shadow: inset 0px 2px 1px #696969;
-    border-radius: 26px;
+  box-shadow: inset 0px 2px 1px #696969;
+  border-radius: 26px;
 }
 
 .user-navigation {
@@ -81,17 +81,17 @@ a {
 .user-navigation a:not(.basket-active) {
 	text-decoration: none;
 	width: 92px;
-    padding: 8px 16px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
 }
 
 .user-navigation a:hover:not(.basket-active),
 .user-navigation a:focus:not(.basket-active) {
 	color: var(--basic-black);
 	width: 92px;
-    background: var(--basic-white);
-    border-radius: 20px;
+  background: var(--basic-white);
+  border-radius: 20px;
 }
 
 p .phone-number {
@@ -146,15 +146,15 @@ a:focus:not(.user-navigation) {
 	border: 0px;
 	color: var(--basic-white);
 	background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-    box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-    border-radius: 70px;
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  border-radius: 70px;
 }
 
 .button:hover,
 .button:focus {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
-    linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-    box-shadow: 0px 2px 2px #AC1000;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+  linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: 0px 2px 2px #AC1000;
 }
 
 .button:active {
@@ -166,7 +166,7 @@ a:focus:not(.user-navigation) {
 .mailing button {
 	font-size: 18px;
 	padding: 14px 19px;
-    line-height: 24px;
+  line-height: 24px;
 }
 
 /*Footer*/
@@ -206,9 +206,9 @@ a.basket-active {
 	background-color: var(--basic-white);
 	text-decoration: none;
 	width: 118px;
-    height: 32px;
-    padding: 10px 16px;
-    border-radius: 20px;
+  height: 32px;
+  padding: 10px 16px;
+  border-radius: 20px;
 }
 
 a.basket-active:hover,
@@ -221,28 +221,28 @@ a.basket-active:focus {
 
 .way {
 	font-size: 14px;
-    line-height: 16px;
+  line-height: 16px;
 }
 
 .title {
 	font-weight: bold;
-    font-size: 35px;
-    line-height: 41px;
+  font-size: 35px;
+  line-height: 41px;
 }
 
 .catalog h3 {
 	font-weight: 500;
 	width: 267px;
-    text-align: center;
+  text-align: center;
 }
 
 .catalog-list p {
 	font-weight: bold;
-    font-size: 45px;
+  font-size: 45px;
 }
 
 .catalog-list span {
 	font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
+  font-size: 30px;
+  line-height: 35px;
 }
