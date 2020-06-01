@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -52,13 +52,16 @@
       	<p>Сортировка:</p>
         <select name="filter">
           <option value="popular">по популярности</option>
-          <option value="price">по цене</option>
+          <option value="cheap">сначала недорогие</option>
+          <option value="expensive">сначала дорогие</option>
+          <option value="fat">по жирности</option>
         </select>  
 
           <!-- диапазон выбора цены -->
           <!-- я не знаю как сделать 2 ползунка в range -->
           
         <p>Жирность:</p>
+        <span>
         <label>
           <input type="radio" name="fat" value="zero-percent">
            0%
@@ -75,7 +78,9 @@
           <input type="radio" name="fat" value="after-thirty-percent">
           выше 30%
         </label>
+        </span>
         <p>Наполнители:</p>
+        <span>
         <label>
         	<input type="checkbox" name="chocolate" checked="">
         	шоколадные
@@ -96,7 +101,8 @@
         	<input type="checkbox" name="jams">
         	джемы
         </label>
-        <button type="submit">Применить</button>
+        </span>
+        <button type="submit" class="button-filter">Применить</button>
       </form>
     </section>
   	<section class="catalog">
