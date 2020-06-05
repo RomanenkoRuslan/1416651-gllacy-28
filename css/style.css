@@ -164,6 +164,41 @@ a:focus:not(.user-navigation) {
 	line-height: 30px;
 }
 
+.recipe {
+	display: flex;
+	flex-direction: column;
+	width: 560px;
+	height: 220px;
+	border-radius: 16px;
+	background-image: url(../img/strawberry.jpg);
+	background-color: var( --basic-white);
+}
+
+.recipe p {
+	font-weight: 500;
+	padding-left: 16px;
+}
+
+.recipe a {
+	width: 287px;
+	padding-left: 16px;
+}
+
+.mailing {
+	width: 548px;
+	height: 210px;
+	padding-left: 20px;
+	background-image: url(../img/background.png);
+	background-color: var(--basic-white);
+	border: 5px solid black;
+	border-image: url(../img/border.png);
+	border-radius: 16px;
+}
+
+.mailing p {
+	width: 512px;
+}
+
 /*All buttons*/
 
 .button {
@@ -273,6 +308,14 @@ a.basket-active:focus {
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 35px;
+}
+
+.catalog-list img {
+	border-radius: 50%;
+}
+
+.hits-list img {
+	border-radius: 50%;
 }
 
 .slider a {
@@ -408,4 +451,125 @@ p.number {
 	border-radius: 20px;
 	padding: 14px 7px;
 	font-weight: bold;
+}
+
+/*Сетка*/
+
+.page {
+	height: 100%;
+}
+
+.main {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: flex-start;
+	grid-gap: 40px;
+}
+
+.main-header {
+	margin-bottom: 70px;
+}
+
+.main-navigation {
+	width: 1146px;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.site-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.user-navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.features-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.discounts-list {
+	width: 1146px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.hits-list {
+	width: 1146px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.news {
+	width: 1146px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.main-footer {
+	width: 1146px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.socials-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.we-list {
+	width: 340px;
+	align-self: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.we-list li {
+	width: 162px;
+}
+
+.academy {
+	width: 190px;
+	display: flex;
+	flex-direction: column;
+}
+
+.breadcrumbs {
+	display: flex;
+	flex-direction: row;
+	align-items:center; 
+}
+
+.catalog-list {
+	width: 1146px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.pagination {
+	padding-left: 979px;
+	width: 194px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.pagination a {
+	text-decoration: none;
 }

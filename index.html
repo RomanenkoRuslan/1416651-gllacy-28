@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="grid-container">
 
   <header class="main-header">
+    <div class="main-navigation-wrapper">
   	<nav class="main-navigation">
   		<a href="#" class="main-logo">
   			<img src="img/logo.png" width="100" height="50" alt="Глейси">
@@ -28,17 +29,18 @@
         </li>
   			<li><a href="#">Доставка и оплата</a></li>
   			<li><a href="#">О компании</a></li>
-  		</ul>
-  	</nav>
-    <ul class="user-navigation">
-      <li><a href="#">Поиск</a></li>
-      <li><a href="#">Вход</a></li>
-      <li><a href="#" class="basket">Корзина</a></li>
-    </ul>
-    <p>
-      с 10 до 20, ежедневно
-      <a href="tel: +78124502525" class="phone-number">8 812 450-25-25</a>
-    </p>
+  		</ul>  
+      <ul class="user-navigation">
+        <li><a href="#">Поиск</a></li>
+        <li><a href="#">Вход</a></li>
+        <li><a href="#" class="basket">Корзина</a></li>
+      </ul>
+  </nav>
+  </div>
+      <p>
+        с 10 до 20, ежедневно
+        <a href="tel: +78124502525" class="phone-number">8 812 450-25-25</a>
+      </p>
   </header>
 
   <main class="main">
@@ -123,9 +125,10 @@
   			</li>
   		</ul>
   	</section>
+    <div class="news">
   	<article class="recipe">
   		<h2 class="visually-hidden">Рецепт</h2>
-  		Новое в нашем блоге
+  		<p>Новое в нашем блоге</p>
   		<a href="#">10 способов сервировки 
   		 фруктовых щербетов к  
   		  столу</a>
@@ -142,6 +145,7 @@
         <button type="submit" class="button">Отправить</button>
       </form>
   	</section>
+    </div>
     <section class="address">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="info">
@@ -187,7 +191,7 @@
   	<p class="academy">
   		<a href="https://htmlacademy.ru/"><img src="img/logo-acad.svg" 
       width="108" height="39" alt="HTML Academy"></a>
-  		Сделано в <a href="#">HTML Academy</a> © 2019
+  		<span>Сделано в <a href="#">HTML Academy</a> © 2019</span>
   	</p>
   </footer>
 
