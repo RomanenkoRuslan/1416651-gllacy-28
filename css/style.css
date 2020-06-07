@@ -147,10 +147,11 @@ a:focus:not(.user-navigation) {
 
 .features {
 	width: 1146px;
+	padding-left: 20px;
+	padding-top: 20px;
 	background-image: url(../img/pattern.jpg);
 	background-color: beige;
 	border-radius: 16px;
-	padding: 24px 23px 36px 20px;
 }
 
 .features li {
@@ -168,7 +169,7 @@ a:focus:not(.user-navigation) {
 	display: flex;
 	flex-direction: column;
 	width: 560px;
-	height: 220px;
+	min-height: 220px;
 	border-radius: 16px;
 	background-image: url(../img/strawberry.jpg);
 	background-color: var( --basic-white);
@@ -186,8 +187,7 @@ a:focus:not(.user-navigation) {
 
 .mailing {
 	width: 548px;
-	height: 210px;
-	padding-left: 20px;
+	min-height: 210px;
 	background-image: url(../img/background.png);
 	background-color: var(--basic-white);
 	border: 5px solid black;
@@ -231,16 +231,17 @@ a:focus:not(.user-navigation) {
 
 /*Footer*/
 
-.we-list {
+.main-information-list {
 	font-size: 13px;
 	line-height: 18px;
 }
 
-.we-list li:first-child{
+.main-information-list li:first-child{
 	font-weight: bold;
 }
 
 .academy {
+	margin-top: 18px;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -370,9 +371,7 @@ a.basket-active:focus {
 	margin-left: 16px;
 }
 
-.address {
-	background-image: url(../img/map.png);
-	background-color: white;
+.address iframe {
 	width: 1200px;
 	height: 430px;
 	color: var(--basic-black);
@@ -398,6 +397,7 @@ a.button-feedback {
 }
 
 .info p {
+	color: var(--basic-black);
 	padding-top: 32px;
 	padding-right: 53px;
 	padding-left: 25px;
@@ -413,6 +413,7 @@ p.number {
 	padding-top: 0;
 }
 
+.info a,
 .info span {
 	font-weight: bold;
 	font-size: 18px;
@@ -455,11 +456,18 @@ p.number {
 
 /*Сетка*/
 
+.center {
+	width: 1200px;
+	padding-left: 27px;
+	padding-right: 27px;
+}
+
 .page {
 	height: 100%;
 }
 
 .main {
+	width: 1200px;
 	min-height: 100%;
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
@@ -498,6 +506,7 @@ p.number {
 }
 
 .discounts-list {
+	padding-left: 0;
 	width: 1146px;
 	display: flex;
 	flex-direction: row;
@@ -505,6 +514,7 @@ p.number {
 }
 
 .hits-list {
+	padding-left: 0;
 	width: 1146px;
 	display: flex;
 	flex-direction: row;
@@ -518,7 +528,7 @@ p.number {
 	justify-content: space-between;
 }
 
-.main-footer {
+.flex {
 	width: 1146px;
 	display: flex;
 	flex-direction: row;
@@ -526,12 +536,13 @@ p.number {
 }
 
 .socials-list {
+	width: 250px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
-.we-list {
+.main-information-list {
 	width: 340px;
 	align-self: center;
 	display: flex;
@@ -539,7 +550,7 @@ p.number {
 	justify-content: space-between;
 }
 
-.we-list li {
+.main-information-list li {
 	width: 162px;
 }
 
