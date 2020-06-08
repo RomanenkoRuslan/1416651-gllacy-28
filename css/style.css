@@ -146,7 +146,6 @@ a:focus:not(.user-navigation) {
 }
 
 .features {
-	width: 1146px;
 	padding-left: 20px;
 	padding-top: 20px;
 	background-image: url(../img/pattern.jpg);
@@ -277,6 +276,9 @@ a.basket-active:focus {
 	color: var(--basic-black);
 }
 
+.number a {
+	display: blockd}
+
 
 /*Catalog-main*/
 
@@ -330,7 +332,6 @@ a.basket-active:focus {
 	width: 560px;
 	min-height: 229px;
 	border-radius: 16px;
-	border: 1px solid black;
 }
 .discounts-list h3 {
 	font-weight: bold;
@@ -369,6 +370,10 @@ a.basket-active:focus {
 
 .chocolate a {
 	margin-left: 16px;
+}
+
+.address {
+	margin: 0 auto;
 }
 
 .address iframe {
@@ -457,7 +462,8 @@ p.number {
 /*Сетка*/
 
 .center {
-	width: 1200px;
+	width: 1146px;
+	margin: 0 auto;
 	padding-left: 27px;
 	padding-right: 27px;
 }
@@ -467,8 +473,6 @@ p.number {
 }
 
 .main {
-	width: 1200px;
-	min-height: 100%;
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
 	align-content: flex-start;
@@ -507,7 +511,6 @@ p.number {
 
 .discounts-list {
 	padding-left: 0;
-	width: 1146px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -515,14 +518,12 @@ p.number {
 
 .hits-list {
 	padding-left: 0;
-	width: 1146px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
 .news {
-	width: 1146px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -567,7 +568,6 @@ p.number {
 }
 
 .catalog-list {
-	width: 1146px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
