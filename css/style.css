@@ -584,3 +584,16 @@ p.number {
 .pagination a {
 	text-decoration: none;
 }
+
+.filter {
+	width: 869px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.filter .button-filter {
+	align-self: flex-end;
+}

@@ -53,6 +53,7 @@
   	<h1 class="title">Сливочное мороженое</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр мороженого</h2>
+      <div>
       <form action="https://echo.htmlacademy.ru" method="post">
       	<p>Сортировка:</p>
         <select name="filter">
@@ -60,53 +61,57 @@
           <option value="cheap">сначала недорогие</option>
           <option value="expensive">сначала дорогие</option>
           <option value="fat">по жирности</option>
-        </select>  
+        </select> 
+      </div> 
 
           <!-- диапазон выбора цены -->
-          <!-- я не знаю как сделать 2 ползунка в range -->
-          
+          <!-- я не знаю как сделать 2 ползунка в range --> 
+      <div>
         <p>Жирность:</p>
         <span>
-        <label>
-          <input type="radio" name="fat" value="zero-percent">
-           0%
-        </label>
-        <label>
-          <input type="radio" name="fat" value="before-ten-percent" checked>
-           до 10%
-        </label>
-        <label>
-          <input type="radio" name="fat" value="before-thirty-percent">
-          до 30%
-        </label>
-        <label>
-          <input type="radio" name="fat" value="after-thirty-percent">
-          выше 30%
-        </label>
+          <label>
+            <input type="radio" name="fat" value="zero-percent">
+            0%
+          </label>
+          <label>
+            <input type="radio" name="fat" value="before-ten-percent" checked>
+            до 10%
+          </label>
+          <label>
+            <input type="radio" name="fat" value="before-thirty-percent">
+            до 30%
+          </label>
+          <label>
+            <input type="radio" name="fat" value="after-thirty-percent">
+            выше 30%
+          </label>
         </span>
+      </div>
+      <div>
         <p>Наполнители:</p>
         <span>
-        <label>
-        	<input type="checkbox" name="chocolate" checked="">
-        	шоколадные
-        </label>
-        <label>
-        	<input type="checkbox" name="sugar-powders" checked="">
-        	сахарные присыпки
-        </label>
-        <label>
-        	<input type="checkbox" name="fruits">
-        	фрукты
-        </label>
-        <label>
-        	<input type="checkbox" name="syrups">
-        	сиропы
-        </label>
-        <label>
-        	<input type="checkbox" name="jams">
-        	джемы
-        </label>
+          <label>
+        	 <input type="checkbox" name="chocolate" checked="">
+        	 шоколадные
+          </label>
+          <label>
+        	 <input type="checkbox" name="sugar-powders" checked="">
+        	 сахарные присыпки
+          </label>
+          <label>
+        	 <input type="checkbox" name="fruits">
+        	 фрукты
+          </label>
+          <label>
+        	 <input type="checkbox" name="syrups">
+        	 сиропы
+          </label>
+          <label>
+        	 <input type="checkbox" name="jams">
+        	 джемы
+          </label>
         </span>
+      </div>
         <button type="submit" class="button-filter">Применить</button>
       </form>
     </section>
