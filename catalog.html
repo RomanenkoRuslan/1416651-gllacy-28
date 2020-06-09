@@ -55,20 +55,38 @@
       <h2 class="visually-hidden">Фильтр мороженого</h2>
       <div>
       <form action="https://echo.htmlacademy.ru" method="post">
-      	<p>Сортировка:</p>
-        <select name="filter">
+      	<p class="name-filter">Сортировка:</p>
+        <select name="filter gray-field">
           <option value="popular">по популярности</option>
           <option value="cheap">сначала недорогие</option>
           <option value="expensive">сначала дорогие</option>
           <option value="fat">по жирности</option>
         </select> 
-      </div> 
-
-          <!-- диапазон выбора цены -->
-          <!-- я не знаю как сделать 2 ползунка в range --> 
+      </div>
       <div>
-        <p>Жирность:</p>
-        <span>
+        <fieldset class="filter-item">
+        <legend>Цена: 100 ₽ – 500 ₽</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="
+                width: 50%;
+                margin-left: 10%
+              "></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0" style="
+              left:35px; 
+            "></div>
+            <div class="toggle toggle-max" tabindex="0" style="
+              left:119px;
+            "></div>
+          </div>
+        </div>
+    </fieldset>
+      </div>
+      <div>
+        <p class="name-filter">Жирность:</p>
+        <div class="gray-field">
           <label>
             <input type="radio" name="fat" value="zero-percent">
             0%
@@ -85,11 +103,11 @@
             <input type="radio" name="fat" value="after-thirty-percent">
             выше 30%
           </label>
-        </span>
+        </div>
       </div>
       <div>
-        <p>Наполнители:</p>
-        <span>
+        <p class="name-filter">Наполнители:</p>
+        <div class="gray-field">
           <label>
         	 <input type="checkbox" name="chocolate" checked="">
         	 шоколадные
@@ -110,7 +128,7 @@
         	 <input type="checkbox" name="jams">
         	 джемы
           </label>
-        </span>
+        </div>
       </div>
         <button type="submit" class="button-filter">Применить</button>
       </form>

@@ -452,7 +452,7 @@ p.number {
 	line-height: 16px;
 }
 
-.filter span {
+.filter .gray-field {
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 	padding: 14px 7px;
@@ -596,4 +596,79 @@ p.number {
 
 .filter .button-filter {
 	align-self: flex-end;
+}
+
+.name-filter {
+	margin-bottom: 7px;
+}
+
+/*RANGE*/
+
+.filter-item {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.range-filter {
+	width: 218px;
+	height: 36px;
+	margin-top: 7px;
+}
+
+.filter-item legend {
+	width: 131px;
+	padding-top: 20px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.range-controls {
+	position: relative;
+	background: rgba(255, 255, 255, 0.2); 
+	height: 19px;
+	padding-top: 17px;
+	padding-right: 21px;
+	padding-left: 21px;
+  margin-bottom: 18px;
+  border-radius: 25px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 106px;
+  height: 2px;
+  background-color: white;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 111px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
 }
