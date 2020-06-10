@@ -585,7 +585,7 @@ p.number {
 	text-decoration: none;
 }
 
-.filter {
+.filter form {
 	width: 869px;
 	display: flex;
 	flex-wrap: wrap;
@@ -631,44 +631,49 @@ p.number {
 	padding-top: 17px;
 	padding-right: 21px;
 	padding-left: 21px;
-  margin-bottom: 18px;
-  border-radius: 25px;
+	margin-bottom: 18px;
+	border-radius: 25px;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: #d7dcde;
+	height: 2px;
+	background: #d7dcde;
 }
 
 .range-controls .bar {
-  width: 106px;
-  height: 2px;
-  background-color: white;
+	width: 106px;
+	height: 2px;
+	background-color: white;
+}
+
+.range-controls .bar {
+	width: 50%;
+	margin-left: 10%
 }
 
 .range-controls .toggle {
-  position: absolute;
-  top: 9px;
-  left: 0;
-  width: 4px;
-  height: 4px;
-  padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
-  cursor: pointer;
+	position: absolute;
+	top: 9px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+	left:35px
 }
 
 .range-controls .toggle-max {
-  left: 111px;
+	left:119px;
 }
 
 .price-controls {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
