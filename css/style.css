@@ -35,7 +35,7 @@ body {
 	color: var(--basic-white);
 	background-color: var(--background-green);
 	background-position: top;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
 }
 
 img {
@@ -47,8 +47,19 @@ a {
 	color: var(--basic-white);
 }
 
-.visually-hidden {
-	display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 /*Header*/
@@ -83,6 +94,10 @@ a {
 	font-size: 14px;
 }
 
+.user-navigation li {
+	padding-left: 10px;
+}
+
 .user-navigation a:not(.basket-active) {
 	text-decoration: none;
 	width: 92px;
@@ -102,6 +117,7 @@ a {
 .phone-number {
 	font-weight: bold;
 	font-size: 22px;
+	line-height: 24px;
 	text-decoration: none;
 }
 
@@ -110,6 +126,26 @@ a {
 .main-footer li,
 .cart li {
 	list-style: none;
+}
+
+.main-header nav {
+	padding-top: 9px;
+	position: relative;
+}
+
+.schedule {
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 16px;
+	width: 167px;
+}
+
+.schedule a {
+	padding-top: 8px;
+	display: inline-block;
 }
 
 
@@ -276,9 +312,6 @@ a.basket-active:focus {
 	color: var(--basic-black);
 }
 
-.number a {
-	display: blockd}
-
 
 /*Catalog-main*/
 
@@ -359,11 +392,20 @@ a.basket-active:focus {
 }
 
 .raspberry {
+	position: relative;
 	background-image: url(../img/raspberry.jpg);
 	background-color: red;
 }
 
+.raspberry a,
+.chocolate a {
+	position: absolute;
+	bottom: 22px;
+	right: 22px;
+}
+
 .chocolate {
+	position: relative;
 	background-image: url(../img/chocolate.jpg);
 	background-color: brown;
 }
@@ -479,16 +521,11 @@ p.number {
 	grid-gap: 40px;
 }
 
-.main-header {
-	margin-bottom: 70px;
-}
-
 .main-navigation {
 	width: 1146px;
 	padding: 0 10px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 }
 
 .site-navigation {
@@ -498,6 +535,8 @@ p.number {
 }
 
 .user-navigation {
+	position: relative;
+	margin-left: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -510,6 +549,7 @@ p.number {
 }
 
 .discounts-list {
+	position: relative;
 	padding-left: 0;
 	display: flex;
 	flex-direction: row;
@@ -537,10 +577,14 @@ p.number {
 }
 
 .socials-list {
-	width: 250px;
+	width: 100px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+}
+
+.socials-list li {
+	padding-right: 12px;
 }
 
 .main-information-list {
@@ -676,4 +720,101 @@ p.number {
 .price-controls {
 	display: flex;
 	justify-content: space-between;
+}
+
+/*Слайдер*/
+
+.site-wrapper {
+	min-width: 940px;
+	background-repeat: no-repeat;
+	background-position: top 65px center;
+ }
+
+ .main-header {
+ 	background-image: none;
+ }
+
+.site-wrapper-1 {
+	position: relative;
+	background-color: #849d8f;
+	background-image: url("../img/group-1.png");
+}
+
+.site-wrapper-2 {
+	background-color: #8996a6;
+	background-image: url("../img/group-2.png");
+}
+
+.site-wrapper-3 {
+	background-color: #9d8b84;
+	background-image: url("../img/group-3.png");
+}
+
+.main-header {
+	background-image: none;
+	background-color: none;
+}
+
+.slider {
+	position: relative;
+	padding-top: 340px;
+	padding-bottom: 40px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.slider-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.slide {
+	display: none;
+}
+
+.slide-current {
+	display: block;
+}
+
+.slide-title {
+	width: 700px;
+	margin: 0 auto;
+	margin-bottom: 27px;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 800;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 63px;
+	left: 0;
+	z-index: 20;
+	display: flex;
+	width: 67px;
+	justify-content: space-between;
+}
+
+.slider-controls button {
+	padding: 0;
+	width: 17px;
+	height: 17px;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider-controls .current {
+	background-color: #ffffff;
+}
+
+.twitter::before {
+	content: "";
+	width: 16px;
+	height: 18px;
+	background-image: url(../img/twitter.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
