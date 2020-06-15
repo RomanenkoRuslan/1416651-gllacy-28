@@ -64,6 +64,7 @@ input[type="radio"].visually-hidden {
 
 /*Header*/
 
+
 .site-navigation,
 .user-navigation {
 	font-weight: bold;
@@ -659,7 +660,6 @@ a.button-feedback {
 
 .main-navigation {
 	width: 1146px;
-	padding: 0 10px;
 	display: flex;
 	flex-direction: row;
 }
@@ -967,8 +967,8 @@ a.button-feedback {
 
 .slider-controls button {
 	padding: 0;
-	width: 17px;
-	height: 17px;
+	width: 19px;
+	height: 19px;
 	background-color: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 50%;
