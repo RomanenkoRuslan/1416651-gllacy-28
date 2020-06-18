@@ -177,11 +177,12 @@ input[type="radio"].visually-hidden {
 }
 
 .new a {
+	margin-left: 10px;
 	font-weight: bold;
 	line-height: 18px;
 }
 
-.dropdown-content hr {
+.line {
 	border: 1px solid rgba(50, 50, 50, 0.2);
 	margin: 0px 6px;
 }
@@ -194,7 +195,6 @@ input[type="radio"].visually-hidden {
 }
 
 .dropdown-content a:hover{
-	padding-left: 21px;
 	text-decoration: none;
 	color: black;
 	font-size: 14px;
@@ -220,9 +220,8 @@ input[type="radio"].visually-hidden {
 }
 
 .schedule {
-	position: absolute;
-	top: 61px;
-	right: 0px;
+	margin-top: 0px;
+	margin-left: auto;
 	text-align: center;
 	font-size: 14px;
 	line-height: 16px;
@@ -286,7 +285,7 @@ input[type="radio"].visually-hidden {
 .features {
 	padding-left: 20px;
 	padding-top: 25px;
-	margin-top: 21px;
+	margin-top: 24px;
 	background-image: url(../img/pattern.jpg);
 	background-color: beige;
 	border-radius: 16px;
@@ -294,9 +293,8 @@ input[type="radio"].visually-hidden {
 
 .features li {
 	position: relative;
-	vertical-align: center;
 	width: 480px;
-	margin-bottom: 23px;
+	margin-bottom: 22px;
 }
 
 .features svg {
@@ -320,16 +318,14 @@ input[type="radio"].visually-hidden {
 	position: relative;
 	top: 4px;
 	left: 5px;
+	margin-bottom: 8px;
 	font-weight: 500;
 	padding-left: 16px;
 }
 
 .recipe a {
-	position: relative;
-	top: -10px;
-	left: 5px;
 	width: 287px;
-	padding-left: 16px;
+	padding-left: 19px;
 }
 
 .mailing {
@@ -358,7 +354,7 @@ input[type="radio"].visually-hidden {
 	width: 512px;
 	margin: 0px;
 	padding-left: 20px;
-	padding-top: 24px;
+	padding-top: 30px;
 }
 
 .mailing input {
@@ -375,10 +371,8 @@ input[type="radio"].visually-hidden {
 }
 
 .mailing form {
-	position: absolute;
-	bottom: 35px;
 	width: 508px;
-	padding-top: 47px;
+	padding-top: 40px;
 	padding-left: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -436,8 +430,7 @@ input[type="radio"].visually-hidden {
 .academy p {
 	font-size: 12px;
 	line-height: 18px;
-	position: relative;
-	top: -13px;
+	margin-top: 5px;
 }
 
 /*Catalog-header*/
@@ -488,7 +481,6 @@ a.basket-active:hover,
 a.basket-active:focus {
 	color: var(--basic-black);
 }
-
 
 /*Catalog-main*/
 
@@ -544,8 +536,6 @@ a.basket-active:focus {
 }
 
 .slider a {
-	position: relative;
-	top: -10px;
 	width: 278px;
 	height: 63px;
 	text-decoration: none;
@@ -580,7 +570,7 @@ a.basket-active:focus {
 
 .discounts-list a {
 	text-decoration: none;
-	padding: 12px 23px;
+	padding: 12px 21px;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 24px;
@@ -589,6 +579,7 @@ a.basket-active:focus {
 
 .discounts-list {
 	font-size: 18px;
+	margin-top: 25px;
 }
 
 .raspberry {
@@ -597,21 +588,22 @@ a.basket-active:focus {
 	background-color: red;
 }
 
-.raspberry a,
+.raspberry a {
+	display: inline-block;
+	margin-left: 374px;
+	margin-top: 25px;
+}
+
 .chocolate a {
-	position: absolute;
-	bottom: 22px;
-	right: 22px;
+	display: inline-block;
+	margin-left: 350px;
+	margin-top: 25px;
 }
 
 .chocolate {
 	position: relative;
 	background-image: url(../img/chocolate.jpg);
 	background-color: brown;
-}
-
-.chocolate a {
-	margin-left: 16px;
 }
 
 .address {
@@ -622,7 +614,7 @@ a.basket-active:focus {
 .info {
 	position: absolute;
 	bottom: 67px;
-	top: center;
+	top: middle;
 	left: 870px;
 	width: 303px;
 	height: 306px;
@@ -645,17 +637,14 @@ a.basket-active:focus {
 }
 
 a.button-feedback {
-	position: relative;
-	bottom: 28px;
 	padding: 11px 28px;
 	margin-left: 25px;
 	color: var(--basic-white);
 }
 
 .info {
-	padding: 0px;
 	width: 303px;
-	min-height: 306px;
+	min-height: 310px;
 	background-color: var(--basic-white);
 	border-radius: 16px;
 }
@@ -663,6 +652,7 @@ a.button-feedback {
 .info p {
 	color: var(--basic-black);
 	padding-top: 15px;
+	padding-bottom: 15px;
 	padding-right: 53px;
 	padding-left: 25px;
 	font-size: 14px;
@@ -670,7 +660,8 @@ a.button-feedback {
 }
 
 .info p:nth-child(2) {
-	padding-bottom: 44px;
+	padding-top: 0px;
+	padding-bottom: 18px;
 }
 
 .number {
@@ -789,7 +780,8 @@ a.button-feedback {
 
 .features-list {
 	padding-left: 55px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
 	width: 1045px;
 	display: flex;
 	flex-wrap: wrap;
@@ -828,9 +820,8 @@ a.button-feedback {
 }
 
 .socials-list {
-	position: relative;
-	top: 12px;
-	left: -2px;
+	padding-left: 38px;
+	margin-top: 30px;
 	width: 100px;
 	display: flex;
 	flex-direction: row;
@@ -846,9 +837,8 @@ a.button-feedback {
 }
 
 .main-information-list {
-	position: relative;
-	top: 15px;
-	left: 30px;
+	margin-top: 30px;
+	margin-left: 60px;
 	width: 350px;
 	align-self: center;
 	display: flex;
@@ -1062,7 +1052,7 @@ a.button-feedback {
 
 .slider {
 	position: relative;
-	padding-top: 335px;
+	padding-top: 270px;
 	padding-bottom: 25px;
 	text-align: center;
 	color: #ffffff;
@@ -1092,7 +1082,7 @@ a.button-feedback {
 	width: 700px;
 	padding-top: 0px;
 	margin: 0 auto;
-	margin-bottom: 27px;
+	margin-bottom: 20px;
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 800;
@@ -1116,6 +1106,15 @@ a.button-feedback {
 	border: 2px solid #ffffff;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+.slider-controls button:hover,
+.slider-controls button:focus {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider-controls button:active {
+	background-color: var(--basic-white);
 }
 
 .slider-controls .current {
@@ -1157,11 +1156,12 @@ a.button-feedback {
 }
 
 .basket svg {
-  width: 20px;
-  height: 19px;
+  width: 21px;
+  height: 20px;
 }
 
-.entrance:hover path {
+.entrance:hover path,
+.entrance:focus path {
 	fill: var(--basic-black);
 }
 
@@ -1169,7 +1169,8 @@ a.button-feedback {
 	cursor: pointer;
 }
 
-.basket:hover path {
+.basket:hover path,
+.basket:focus path {
 	fill: var(--basic-black);
 }
 
@@ -1199,6 +1200,35 @@ a.button-feedback {
 
 .hits-list li {
 	position: relative;
+}
+
+.hits-list li:hover { 
+	text-align: center;
+	width: 293px;
+	height: 402px;
+	color: var(--basic-white);
+	background-opacity: 0.2;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.hits-list li:hover img {
+	margin-top: 0px;
+}
+
+.hits-list li:hover::before {
+	position: relative;
+	top: 359px;
+	content: 'Быстрый просмотр';
+	width: 200px;
+	height: 44px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 8px 16px;
+	background: linear-gradient(180deg, #F26843 0%, #E84D37 100%);
+	box-shadow: 0px 1px 2px #AC1000;
+	border-radius: 50px;
 }
 
 .catalog-list li {
