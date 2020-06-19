@@ -31,12 +31,12 @@
   		  <li><a href="#" class="site-nav-item">О компании</a></li>
   	  </ul>
       <ul class="user-navigation">
-        <li><span class="search"><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#fff" fill-opacity=".2"/><path d="M24 22.665l-4.922-4.932a6.144 6.144 0 00-.993-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L22.659 24 24 22.665zm-9.918-4.288a4.244 4.244 0 01-3.928-2.63 4.27 4.27 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.275 4.275 0 01-1.248 3.01 4.255 4.255 0 01-3.002 1.25z" fill="white"/></svg></span><span class="visually-hidden">Поиск</span></li>
-        <li><a href="#" class="entrance"><svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg><span>Вход</span></a></li>
+        <li><a class="search"><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#fff" fill-opacity=".2"/><path d="M24 22.665l-4.922-4.932a6.144 6.144 0 00-.993-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L22.659 24 24 22.665zm-9.918-4.288a4.244 4.244 0 01-3.928-2.63 4.27 4.27 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.275 4.275 0 01-1.248 3.01 4.255 4.255 0 01-3.002 1.25z" fill="white"/></svg></a><span class="visually-hidden">Поиск</span></li>
+        <li><a href="#" class="user-nav-item entrance"><svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg><span>Вход</span></a></li>
         <li><a href="#" class="basket-active"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>2 товара</a></li>
       </ul>
   </nav>
-  <p class="schedule">
+  <p class="schedule page-catalog">
     с 10 до 20, ежедневно
     <a href="tel: +78124502525" class="phone-number">8 812 450-25-25</a>
   </p>
@@ -46,14 +46,17 @@
   <main class="main">
   <div class="center">
     <div class="breadcrumbs">
-      <a href="index.html" class="way">Главная</a> <svg width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="#fff"/><path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="#fff"/></svg> 
-      <a href="catalog.html" class="way">Каталог</a> <svg width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.156 3L0 .667.616 0l2.771 3L.616 6 0 5.333 2.156 3z" fill="#fff"/><path d="M4.768 3L2.613.667 3.229 0 6 3 3.229 6l-.616-.667L4.768 3z" fill="#fff"/></svg> 
+      <a href="index.html" class="way">Главная</a>
+      <a class="way-right"></a>
+      <a href="catalog.html" class="way">Каталог</a>
+      <a class="way-right"></a>
       <a href="" class="way creamy">Сливочное</a>
     </div>
   	<h1 class="title">Сливочное мороженое</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр мороженого</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post"
+      oninput="min-price.value=dayscount.value">
       <div>
       	<p class="name-filter">Сортировка:</p>
         <select name="filter gray-field">
@@ -64,7 +67,14 @@
         </select>
       </div> 
       <div>
-        <p class="name-filter">Цена: 100 ₽ – 500 ₽</p>
+        <div class="price-controls name-filter">
+          <label class="min-price">
+            Цена: <input type="number" name="min-price" value="100" disabled>
+          </label>
+          <label class="max-price">
+              ₽ – <input type="number" name="max-price" value="500" disabled> ₽
+          </label>
+        </div>
         <div class="range-filter">
           <div class="range-controls">
             <div class="scale">
@@ -127,100 +137,120 @@
   	<section class="catalog">
   		<h2 class="visually-hidden">Каталог</h2>
   		<ul class="catalog-list">
-  			<li>
-  		    <img src="img/product-1.jpg" width="267" height="320" alt="Сливочное с апельсиновым джемом">
+  			<li class="product">
+  		    <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
   		    <p>310 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-2.jpg" width="267" height="320" alt="Сливочно-кофейное">
+  		  <li class="product">
+  		    <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное">
   		    <p>380 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-3.jpg" width="267" height="320" alt="Сливочно-клубничное">
+  		  <li class="product">
+  		    <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное">
   		    <p>355 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-4.jpg" width="267" height="320" alt="Сливочное крем-брюле">
+  		  <li class="product">
+  		    <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле">
   		    <p>415 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочное крем-брюле<br> с карамельной подливкой</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-5.jpg" width="267" height="320" alt="Сливочное с брусничным джемом">
+  		  <li class="product">
+  		    <img src="img/product-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
   		    <p>325 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочное с брусничным джемом</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		   <img src="img/product-6.jpg" width="267" height="320" alt="Сливочно-черничное">
+  		  <li class="product">
+  		   <img src="img/product-6.jpg" width="267" height="267" alt="Сливочно-черничное">
   		    <p>410 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-7.jpg" width="267" height="320" alt="Сливочно-лимонное">
+  		  <li class="product">
+  		    <img src="img/product-7.jpg" width="267" height="267" alt="Сливочно-лимонное">
   		    <p>315 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-8.jpg" width="267" height="320" alt="Сливочное с шоколадной стружкой">
+  		  <li class="product">
+  		    <img src="img/product-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
   		    <p>320 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		  	<img src="img/product-9.jpg" width="267" height="320" alt="Сливочно-ванильное">
+  		  <li class="product">
+  		  	<img src="img/product-9.jpg" width="267" height="267" alt="Сливочно-ванильное">
   		    <p>440 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-10.jpg" width="267" height="320" alt="Сливочноe с ментоловым сиропом">
+  		  <li class="product">
+  		    <img src="img/product-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
   		    <p>435 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-11.jpg" width="267" height="320" alt="Сливочное с кусочками черного шоколада">
+  		  <li class="product">
+  		    <img src="img/product-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
   		    <p>355 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
-  		  <li>
-  		    <img src="img/product-12.jpg" width="267" height="320" alt="Сливочное с мятным сиропом">
+  		  <li class="product">
+  		    <img src="img/product-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
   		    <p>420 &#8381;<span>&sol;кг</span></p>
   		    <h3><a href="#">Сливочное с мятным сиропом</a></h3>
+          <a href="#" class="button quick-view">Быстрый просмотр</a>
   		  </li>
   		</ul>
   	</section>
     <ul class="pagination">
-      <li><a href="#" class="button-back">&lt;</a></li>
+      <li><a href="#" class="button-back"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132a.508.508 0 00-.717.717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717a.506.506 0 00.715 0l5.51-5.51a.505.505 0 000-.715z"/></svg></a></li>
       <li><a href="#" class="catalog-page-active">1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
-      <li><a href="#">&gt;</a></li>
+      <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12"><path fill="#ffffff" d="M7.237 5.642L1.73.132a.508.508 0 00-.717.717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717a.506.506 0 00.715 0l5.51-5.51a.505.505 0 000-.715z"/></svg></a></li>
     </ul>
+    <div class="line-catalog"></div>
   </div>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer footer-catalog">
   <div class="center flex">
   	<section class="socials">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="socials-list">
           <li>
-            <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H19v3.45h3v3.44h-3V27h-3v-8.66h-3V14.9h3v-3.45A3.25 3.25 0 0119 8h3v3.45h.06z" fill="#fff" fill-opacity=".8"/></svg>
-           <a href="#" class="social-item facebook"><span class="visually-hidden">Фейсбук</span></a>
+            <a href="#" class="social-item facebook">
+              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm4.06 9.45H19v3.45h3v3.44h-3V27h-3v-8.66h-3V14.9h3v-3.45A3.25 3.25 0 0119 8h3v3.45h.06z" fill="#fff" fill-opacity=".8"/></svg><span class="visually-hidden">Фейсбук</span>
+            </a>
           </li>
            <li>
-            <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18.64 16.49c.325 0 .648-.06.95-.18a1.2 1.2 0 00.64-.56 2 2 0 00.15-.8 1.55 1.55 0 00-.18-.7 1.05 1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05 1.08-.06 1.48-.08zM20.12 19.08A4.851 4.851 0 0019 19h-2.39v3.5h2.45a3.23 3.23 0 001.21-.25c.321-.11.593-.33.77-.62a1.9 1.9 0 00.22-.9 1.76 1.76 0 00-.26-1 1.6 1.6 0 00-.88-.65z" fill="#fff" fill-opacity=".8"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm6.6 20.53a3.7 3.7 0 01-1.12 1.33 5.17 5.17 0 01-1.83.88 9.76 9.76 0 01-2.51.27H13V11h5.45c.828-.013 1.656.024 2.48.11.543.084 1.07.253 1.56.5a2.75 2.75 0 011.19 1.09c.265.473.4 1.008.39 1.55a3.08 3.08 0 01-.54 1.8 3.46 3.46 0 01-1.53 1.2v.07a4 4 0 012.18 1.13 3.2 3.2 0 01.8 2.26 3.841 3.841 0 01-.38 1.82z" fill="#fff" fill-opacity=".8"/></svg>
-           <a href="#" class="social-item vk"><span class="visually-hidden">Вконтакте</span></a>
+            <a href="#" class="social-item vk">
+              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18.64 16.49c.325 0 .648-.06.95-.18a1.2 1.2 0 00.64-.56 2 2 0 00.15-.8 1.55 1.55 0 00-.18-.7 1.05 1.05 0 00-.61-.51 3 3 0 00-1-.17h-2v3h.57c.59-.05 1.08-.06 1.48-.08zM20.12 19.08A4.851 4.851 0 0019 19h-2.39v3.5h2.45a3.23 3.23 0 001.21-.25c.321-.11.593-.33.77-.62a1.9 1.9 0 00.22-.9 1.76 1.76 0 00-.26-1 1.6 1.6 0 00-.88-.65z" fill="#fff" fill-opacity=".8"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm6.6 20.53a3.7 3.7 0 01-1.12 1.33 5.17 5.17 0 01-1.83.88 9.76 9.76 0 01-2.51.27H13V11h5.45c.828-.013 1.656.024 2.48.11.543.084 1.07.253 1.56.5a2.75 2.75 0 011.19 1.09c.265.473.4 1.008.39 1.55a3.08 3.08 0 01-.54 1.8 3.46 3.46 0 01-1.53 1.2v.07a4 4 0 012.18 1.13 3.2 3.2 0 01.8 2.26 3.841 3.841 0 01-.38 1.82z" fill="#fff" fill-opacity=".8"/></svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
            <li>
-            <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><g fill-opacity=".8" fill="#fff"><path d="M22.92 18A4.96 4.96 0 1113 18c.001-.384.048-.767.14-1.14h-.9v6.84h11.4v-6.84h-.9c.1.373.161.755.18 1.14z"/><path d="M18 20.66A2.66 2.66 0 1015.32 18 2.67 2.67 0 0018 20.66zM23.68 12.3h-3.04v3.04h3.04V12.3z"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0 01-2.32 2.3h-11.4A2.29 2.29 0 0110 23.7V12.3a2.29 2.29 0 012.28-2.3h11.39A2.29 2.29 0 0126 12.3v11.4z"/></g></svg>
-           <a href="#" class="social-item instagram"><span class="visually-hidden">Инстаграм</span></a>
+            <a href="#" class="social-item instagram">
+              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><g fill-opacity=".8" fill="#fff"><path d="M22.92 18A4.96 4.96 0 1113 18c.001-.384.048-.767.14-1.14h-.9v6.84h11.4v-6.84h-.9c.1.373.161.755.18 1.14z"/><path d="M18 20.66A2.66 2.66 0 1015.32 18 2.67 2.67 0 0018 20.66zM23.68 12.3h-3.04v3.04h3.04V12.3z"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm8 21.7a2.28 2.28 0 01-2.32 2.3h-11.4A2.29 2.29 0 0110 23.7V12.3a2.29 2.29 0 012.28-2.3h11.39A2.29 2.29 0 0126 12.3v11.4z"/></g></svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
           </li>
           <li>
-            <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25 6.52-3.46 10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32 7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85a2.31 2.31 0 001.3.12C11 19 9.53 18.3 9.61 16.17c.418.32.934.482 1.46.46-.77-.23-2.15-3.24-1-4.78 2 1.79 4.07 3.48 7.8 3.64.23-2.21 1.24-3.7 3.17-4.32A3.61 3.61 0 0125 12.31c.74-.23 1.45-.47 2.19-.69a2.21 2.21 0 01-.93 1.71 1.77 1.77 0 001.42-.47 2.9 2.9 0 01-1.74 1.95z" fill="#fff" fill-opacity=".8"/></svg>
-           <a href="#" class="social-item twitter"><span class="visually-hidden">Твитер</span></a>
+            <a href="#" class="social-item twitter">
+              <svg width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 35c9.389 0 17-7.611 17-17S27.389 1 18 1 1 8.611 1 18s7.611 17 17 17z" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><path d="M18 2a16 16 0 100 32 16 16 0 000-32zm7.94 12.81c-.25 6.52-3.46 10.83-11 10.7h-.48c-.45 0-4.55-.44-5.35-1.82a7.32 7.32 0 005.12-1.14c-1.05-.29-2.92-.46-3.25-2.85a2.31 2.31 0 001.3.12C11 19 9.53 18.3 9.61 16.17c.418.32.934.482 1.46.46-.77-.23-2.15-3.24-1-4.78 2 1.79 4.07 3.48 7.8 3.64.23-2.21 1.24-3.7 3.17-4.32A3.61 3.61 0 0125 12.31c.74-.23 1.45-.47 2.19-.69a2.21 2.21 0 01-.93 1.71 1.77 1.77 0 001.42-.47 2.9 2.9 0 01-1.74 1.95z" fill="#fff" fill-opacity=".8"/></svg>
+              <span class="visually-hidden">Твитер</span>
+            </a>
           </li>
         </ul>
       </section>
@@ -243,24 +273,26 @@
 
   <section class="cart">
     <h2 class="visually-hidden">Корзина</h2>
-      <ul>
+      <ul class="basket-list">
         <li>
-          <button type="button"></button>
+          <button type="button" class="cross"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg></button>
           <img src="img/product-1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом">
           <h3>Пломбир с апельсиновым джемом</h3>
           <p>1,5 кг х <span>200 руб.</span></p>
           <p>300 руб.</p>
         </li>
         <li>
-          <button type="button"></button>
+          <button type="button" class="cross"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg></button>
           <img src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
           <h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
           <p>1,5 кг х <span>300 руб.</span></p>
           <p>450 руб.</p>
         </li>
       </ul>
-    <p>Итого:750 руб.</p>
-    <a href="#">Оформить заказ</a>
+      <div class="line-cart"></div>
+    <div class="flex-cart"><p class="total-cart">Итого:750 руб.</p>
+      <a href="#" class="button">Оформить заказ</a>
+    </div>
   </section>
   </div>
   </body>
