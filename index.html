@@ -20,7 +20,6 @@
           <a class="site-nav-item catalog" href="catalog.html">Каталог</a>
           <ul class="dropdown-content">
             <li href="#" class="new"><a href="#">Новинки</a></li>
-            <div class="line"></div>
             <li href="#"><a href="catalog.html">Сливочное</a></li>
             <li href="#"><a href="#">Щербеты</a></li>
             <li href="#"><a href="#">Фруктовый лед</a></li>
@@ -302,7 +301,7 @@
 
   <section class="popup feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
-    <p class="subject">Мы обязательно вам ответим! <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg></p>
+    <p class="subject">Мы обязательно вам ответим! <button type="button" class="cross"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path fill="#231F20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg></button></p>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
         <input type="text" name="name-surname" placeholder="Имя Фамилия">
@@ -311,7 +310,7 @@
         <input type="email" name="feedback-email" placeholder="email@example.com">
       </p>
       <p>
-        <input type="textarea" name="feedback" placeholder="В свободной форме" class="feedback-input">
+        <textarea name="feedback" placeholder="В свободной форме" class="feedback-input"></textarea>
       </p>
       <button type="submit" class="button">Отправить</button>
     </form>

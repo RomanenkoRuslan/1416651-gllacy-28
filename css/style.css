@@ -181,25 +181,16 @@ input[type="radio"].visually-hidden {
 	text-decoration: underline;
 }
 
+.new {
+	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+	margin-left: 6px;
+	margin-right: 9px;
+}
+
 .new a {
 	margin-left: 10px;
 	font-weight: bold;
 	line-height: 18px;
-}
-
-.line {
-	border: 1px solid rgba(50, 50, 50, 0.2);
-	margin: 0px 6px;
-}
-
-.line-catalog {
-	margin-top: 30px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	background-color:rgba(255, 255, 255, 0.2); 
-}
-
-.line-cart {
-	border: 1px solid #CACAC7;
 }
 
 .dropdown-content a{
@@ -248,9 +239,10 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-.page-catalog {
-	position: absolute;
-	right: 30px;
+.header-catalog-page {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .schedule a {
@@ -342,9 +334,7 @@ input[type="radio"].visually-hidden {
 }
 
 .recipe p {
-	position: relative;
-	top: 4px;
-	left: 5px;
+	margin-left: 5px;
 	margin-bottom: 8px;
 	font-weight: 500;
 	padding-left: 16px;
@@ -356,9 +346,8 @@ input[type="radio"].visually-hidden {
 }
 
 .mailing {
-	position: relative;
-	top: 5px;
-	left: 6px;
+	margin-top: 5px;
+	margin-left: 6px;
 	width: 548px;
 	min-height: 210px;
 	background-image: url(../img/background.png);
@@ -480,28 +469,35 @@ a.navigation-link-active:focus {
 }
 
 .breadcrumbs {
+	width: 224px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	position: relative;
 	top: 18px;
 }
 
 .breadcrumbs a{
-	padding-right: 8px;
+	padding-right: 10px;
 }
 
-.way-right {
-	padding: 0px;
-	margin: 0px;
-}
-
-.way-right:before {
-	display: inline-block;
-	margin-bottom: 2px;
-	content: url(../img/way.svg);
-}
-
-.breadcrumbs svg {
+.breadcrumbs__link {
+	font-size: 14px;
+	line-height: 16px;
+	text-decoration: none;
 	position: relative;
-	left: -5px;
+}
+
+.breadcrumbs__link:after {
+	content: url(../img/way.svg);
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	padding-left: 7px;
+}
+
+.breadcrumbs__link:last-child:after {
+	display: none;
 }
 
 .basket-active {
@@ -522,19 +518,11 @@ a.basket-active:focus {
 
 /*Catalog-main*/
 
-.way {
-	font-size: 14px;
-	line-height: 16px;
-}
-
-.way.creamy {
-	text-decoration: none;
-}
-
 .title {
 	font-weight: bold;
 	font-size: 35px;
 	margin-bottom: 0px;
+	margin-top: 30px;
 }
 
 .catalog h3,
@@ -652,7 +640,6 @@ a.basket-active:focus {
 .info {
 	position: absolute;
 	bottom: 67px;
-	top: middle;
 	left: 870px;
 	width: 303px;
 	height: 306px;
@@ -880,13 +867,16 @@ a.button-feedback {
 
 .socials-list {
 	padding-left: 38px;
-	width: 100px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
 .socials-list svg:hover path{
+	fill-opacity: 1;
+}
+
+.socials-list svg:active path{
 	fill-opacity: 1;
 }
 
@@ -993,8 +983,7 @@ a.button-feedback {
 }
 
 .name-filter {
-	position: relative;
-	left: 18px;
+	margin-left: 18px;
 	padding-top: 0px;
 	margin-top: 0px;
 	font-weight: 500;
@@ -1006,6 +995,52 @@ a.button-feedback {
 .gray-field option {
 	margin-right: 51px;
 }
+
+.radio-input {
+	position: absolute;
+	-webkit-appearance: none;
+}
+
+.radio {
+	padding-left: 20px;
+}
+
+.radio-box {
+	position: absolute;
+	margin-top: -2px;
+	margin-left: -30px;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/radio-off.svg);
+	background-repeat: no-repeat;
+}
+
+.radio input:checked + .radio-box {
+	background-image: url(../img/radio-on.svg);
+}
+
+.check-input {
+	position: absolute;
+	-webkit-appearance: none;
+}
+
+.check {
+	padding-left: 20px;
+}
+
+.check-box {
+	position: absolute;
+	margin-left: -30px;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+}
+
+.check input:checked + .check-box {
+	background-image: url(../img/checkbox-on.svg);
+}
+
 
 /*RANGE*/
 
@@ -1125,7 +1160,7 @@ input::-webkit-inner-spin-button {
 
 .slider {
 	position: relative;
-	padding-top: 270px;
+	padding-top: 255px;
 	padding-bottom: 25px;
 	text-align: center;
 	color: #ffffff;
@@ -1150,12 +1185,9 @@ input::-webkit-inner-spin-button {
 }
 
 .slide-title {
-	position: relative;
-	top: -15px;
 	width: 700px;
-	padding-top: 0px;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 35px;
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 800;
@@ -1163,7 +1195,7 @@ input::-webkit-inner-spin-button {
 
 .slider-controls {
 	position: absolute;
-	bottom: 47px;
+	bottom: 35px;
 	left: 0;
 	z-index: 20;
 	display: flex;
@@ -1286,13 +1318,17 @@ input::-webkit-inner-spin-button {
 .catalog-list .product:hover {
 	margin-left: 0px;
 	padding-left: 0px;
-	background: rgba(255,255,255, 0.2);
-	border-radius: 4px;
-	transform-scale: ;
+}
+
+.hits-list {
+	position: relative;
 }
 
 .hits-list .quick-view,
 .catalog-list .quick-view {
+	position: absolute;
+	left: 46px;
+	top: 337px;
 	display: none;
 	padding: 8px 16px;
 	text-decoration: none;
@@ -1300,6 +1336,18 @@ input::-webkit-inner-spin-button {
 	font-size: 18px;
 	line-height: 24px;
 	margin-bottom: 8px;
+}
+
+.product:hover::after {
+	position: absolute;
+	content: "";
+	left: 0px;
+	top: 0px;
+	right: -0px;
+	bottom: -46px;
+	z-index: -1;
+	background: rgba(255,255,255, 0.2);
+    border-radius: 4px;
 }
 
 .product:hover .quick-view {
@@ -1441,6 +1489,8 @@ input::-webkit-inner-spin-button {
 }
 
 .feedback-input {
+	padding-left: 14px;
+	padding-top: 16px;
 	margin-top: 20px;
 	width: 428px;
 	min-height: 154px;
@@ -1457,11 +1507,22 @@ input::-webkit-inner-spin-button {
 	padding: 14px 24px;
 }
 
+.feedback .cross {
+	display: inline-block;
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+	outline: none; 
+	background-color: transparent; 
+}
+
 .feedback form {
 	width: 428px;
 }
 
-.feedback svg {
+.feedback .cross {
+	width: 18px;
+	height: 17px;
 	margin-left: 90px;
 	margin-bottom: 10px;
 }
@@ -1483,6 +1544,7 @@ input::-webkit-inner-spin-button {
 }
 
 .basket-list {
+	border-bottom: 1px solid #CACAC7;
 	margin: 0px;
 	padding: 0px;
 }
@@ -1505,6 +1567,7 @@ input::-webkit-inner-spin-button {
 }
 
 .basket-list h3 {
+	font-weight: normal;
 	font-size: 13px;
 	width: 220px;
 }
@@ -1532,4 +1595,26 @@ input::-webkit-inner-spin-button {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+}
+
+.search-popup input:hover,
+.login input:hover,
+.feedback input:hover,
+.feedback-input:hover {
+	border: 2px solid rgba(178, 178, 178, 0.52);
+}
+
+.search-popup input:focus,
+.login input:focus,
+.feedback input:focus,
+.feedback-input:focus {
+	border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.search-popup input:active,
+.login input:active,
+.feedback input:active,
+.feedback-input:active {
+	color: var(--basic-black);
+	font-weight: bold;
 }

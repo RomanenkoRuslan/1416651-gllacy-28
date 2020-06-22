@@ -36,27 +36,28 @@
         <li><a href="#" class="basket-active"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>2 товара</a></li>
       </ul>
   </nav>
-  <p class="schedule page-catalog">
+  <div class="header-catalog-page">
+  <div>
+  <div class="breadcrumbs">
+      <a href="index.html" class="breadcrumbs__link">Главная</a>
+      <a href="catalog.html" class="breadcrumbs__link">Каталог</a>
+      <a href="" class="breadcrumbs__link">Сливочное</a>
+    </div>
+    <h1 class="title">Сливочное мороженое</h1>
+  </div>
+  <p class="schedule">
     с 10 до 20, ежедневно
     <a href="tel: +78124502525" class="phone-number">8 812 450-25-25</a>
   </p>
+  </div>
   </div>
   </header>
 
   <main class="main">
   <div class="center">
-    <div class="breadcrumbs">
-      <a href="index.html" class="way">Главная</a>
-      <a class="way-right"></a>
-      <a href="catalog.html" class="way">Каталог</a>
-      <a class="way-right"></a>
-      <a href="" class="way creamy">Сливочное</a>
-    </div>
-  	<h1 class="title">Сливочное мороженое</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр мороженого</h2>
-      <form action="https://echo.htmlacademy.ru" method="post"
-      oninput="min-price.value=dayscount.value">
+      <form action="https://echo.htmlacademy.ru" method="post">
       <div>
       	<p class="name-filter">Сортировка:</p>
         <select name="filter gray-field">
@@ -69,10 +70,10 @@
       <div>
         <div class="price-controls name-filter">
           <label class="min-price">
-            Цена: <input type="number" name="min-price" value="100" disabled>
+            Цена: <input type="text" name="min-price" value="100">
           </label>
           <label class="max-price">
-              ₽ – <input type="number" name="max-price" value="500" disabled> ₽
+              ₽ – <input type="text" name="max-price" value="500"> ₽
           </label>
         </div>
         <div class="range-filter">
@@ -88,20 +89,24 @@
       <div>
         <p class="name-filter">Жирность:</p>
         <div class="gray-field fat">
-          <label>
-            <input type="radio" name="fat" value="zero-percent">
+          <label class="radio">
+            <input type="radio" name="fat" value="zero-percent" class="radio-input">
+            <span class="radio-box"></span>
             0%
           </label>
-          <label>
-            <input type="radio" name="fat" value="before-ten-percent" checked>
+          <label class="radio">
+            <input type="radio" name="fat" value="before-ten-percent" class="radio-input" checked>
+            <span class="radio-box"></span>
             до 10%
           </label>
-          <label>
-            <input type="radio" name="fat" value="before-thirty-percent">
+          <label class="radio">
+            <input type="radio" name="fat" value="before-thirty-percent" class="radio-input">
+            <span class="radio-box"></span>
             до 30%
           </label>
-          <label>
-            <input type="radio" name="fat" value="after-thirty-percent">
+          <label class="radio">
+            <input type="radio" name="fat" value="after-thirty-percent" class="radio-input">
+            <span class="radio-box"></span>
             выше 30%
           </label>
         </div>
@@ -109,24 +114,29 @@
       <div>
         <p class="name-filter">Наполнители:</p>
         <div class="gray-field fillers">
-          <label>
-        	 <input type="checkbox" name="chocolate" checked="">
+          <label class="check">
+        	 <input type="checkbox" name="chocolate" checked class="check-input">
+           <span class="check-box"></span>
         	 шоколадные
           </label>
-          <label>
-        	 <input type="checkbox" name="sugar-powders" checked="">
+          <label class="check">
+        	 <input type="checkbox" name="sugar-powders" checked class="check-input">
+           <span class="check-box"></span>
         	 сахарные присыпки
           </label>
-          <label>
-        	 <input type="checkbox" name="fruits">
+          <label class="check">
+        	 <input type="checkbox" name="fruits" class="check-input">
+           <span class="check-box"></span>
         	 фрукты
           </label>
-          <label>
-        	 <input type="checkbox" name="syrups">
+          <label class="check">
+        	 <input type="checkbox" name="syrups" class="check-input">
+           <span class="check-box"></span>
         	 сиропы
           </label>
-          <label>
-        	 <input type="checkbox" name="jams">
+          <label class="check">
+        	 <input type="checkbox" name="jams" class="check-input">
+           <span class="check-box"></span>
         	 джемы
           </label>
         </div>
@@ -220,7 +230,6 @@
       <li><a href="#">5</a></li>
       <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12"><path fill="#ffffff" d="M7.237 5.642L1.73.132a.508.508 0 00-.717.717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717a.506.506 0 00.715 0l5.51-5.51a.505.505 0 000-.715z"/></svg></a></li>
     </ul>
-    <div class="line-catalog"></div>
   </div>
   </main>
 
@@ -289,7 +298,6 @@
           <p>450 руб.</p>
         </li>
       </ul>
-      <div class="line-cart"></div>
     <div class="flex-cart"><p class="total-cart">Итого:750 руб.</p>
       <a href="#" class="button">Оформить заказ</a>
     </div>
