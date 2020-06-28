@@ -30,8 +30,32 @@
   			<li><a href="#" class="site-nav-item">О компании</a></li>
   		</ul>  
       <ul class="user-navigation">
-        <li><a class="search"><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#fff" fill-opacity=".2"/><path d="M24 22.665l-4.922-4.932a6.144 6.144 0 00-.993-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L22.659 24 24 22.665zm-9.918-4.288a4.244 4.244 0 01-3.928-2.63 4.27 4.27 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.275 4.275 0 01-1.248 3.01 4.255 4.255 0 01-3.002 1.25z" fill="white"/></svg></span><span class="visually-hidden">Поиск</a></li>
-        <li><a href="#" class="user-nav-item entrance"><svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg><span>Вход</span></a></li>
+        <li><div class="search-area"><a class="search"><svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="16" fill="#fff" fill-opacity=".2"/><path d="M24 22.665l-4.922-4.932a6.144 6.144 0 00-.993-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L22.659 24 24 22.665zm-9.918-4.288a4.244 4.244 0 01-3.928-2.63 4.27 4.27 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.275 4.275 0 01-1.248 3.01 4.255 4.255 0 01-3.002 1.25z" fill="white"/></svg><span class="visually-hidden">Поиск</span></a>
+          <section class="popup search-popup">
+            <h2 class="visually-hidden">Поиск</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" name="search" placeholder="Крем-брюле">
+            </form>
+          </section></div></li>
+        <li><div class="login-area"><a href="#" class="user-nav-item entrance"><svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg><span>Вход</span></a>
+        <section class="popup login">
+          <h2 class="visually-hidden">Вход</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <input type="email" name="input-email" placeholder="email@example.com">
+            </p>
+            <p>
+              <input type="password" name="password" placeholder="......">
+            </p>
+            <div class="flex-login">
+              <button type="submit" class="button">Войти</button>
+              <div class="registration">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </div>
+          </form>
+        </section></div></li>
         <li><a href="#" class="user-nav-item basket"><svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" fill="#fff"/></svg>Пусто</a></li>
       </ul>
     </nav>
@@ -226,7 +250,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="center flex">
+    <div class="center-footer flex">
   	  <section class="socials">
   		  <h2 class="visually-hidden">Социальные сети</h2>
   		  <ul class="socials-list">
@@ -272,32 +296,6 @@
     </div>
   </footer>
   </div>
-
-  <section class="popup search-popup">
-    <h2 class="visually-hidden">Поиск</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <input type="search" name="search" placeholder="Крем-брюле">
-    </form>
-  </section>
-
-  <section class="popup login">
-    <h2 class="visually-hidden">Вход</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <input type="email" name="input-email" placeholder="email@example.com">
-      </p>
-      <p>
-        <input type="password" name="password" placeholder="......">
-      </p>
-      <div class="flex-login">
-      <button type="submit" class="button">Войти</button>
-      <div class="registration">
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
-      </div>
-      </div>
-    </form>
-  </section>
 
   <section class="popup feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
