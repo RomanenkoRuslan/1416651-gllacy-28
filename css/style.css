@@ -230,7 +230,7 @@ input[type="radio"].visually-hidden {
 	margin-left: auto;
 	text-align: center;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 14px;
 	width: 167px;
 	text-align: right;
 }
@@ -334,8 +334,9 @@ input[type="radio"].visually-hidden {
 }
 
 .recipe p {
+	margin-top: 18px;
 	margin-left: 5px;
-	margin-bottom: 8px;
+	margin-bottom: 3px;
 	font-weight: 500;
 	padding-left: 16px;
 }
@@ -374,10 +375,10 @@ input[type="radio"].visually-hidden {
 }
 
 .mailing input {
-	height: 45px;
+	min-height: 45px;
 	padding-left: 14px;
 	padding-top: 15px;
-	padding-bottom: 14px;
+	padding-bottom: 10px;
 	width: 368px;
 	background: #FFFFFF;
 	border: 1px solid rgba(178, 178, 178, 0.52);
@@ -438,7 +439,6 @@ input[type="radio"].visually-hidden {
 }
 
 .academy {
-	margin-top: 12px;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -530,7 +530,7 @@ a.basket-active:focus {
 	font-size: 16px;
 	line-height: 22px;
 	width: 267px;
-	margin-top: 8px;
+	margin-top: 5px;
 	margin-bottom: 8px;
 	text-align: center;
 }
@@ -549,6 +549,8 @@ a.basket-active:focus {
 }
 
 .catalog-list img {
+	min-width: 267px;
+	min-height: 270px;
 	border-radius: 50%;
 }
 
@@ -557,6 +559,8 @@ a.basket-active:focus {
 }
 
 .hits-list img {
+	min-width: 267px;
+	min-height: 270px;
 	border-radius: 50%;
 }
 
@@ -844,7 +848,7 @@ a.button-feedback {
 
 .features-list {
 	padding-left: 55px;
-	padding-bottom: 10px;
+	padding-bottom: 7px;
 	margin-bottom: 0px;
 	width: 1045px;
 	display: flex;
@@ -864,6 +868,7 @@ a.button-feedback {
 .hits-list {
 	width: 1146px;
 	padding-left: 0;
+	margin: 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -890,10 +895,6 @@ a.button-feedback {
 	padding-top: 5px;
 }
 
-.socials {
-	margin-top: 11px;
-}
-
 .socials-list {
 	margin-left: 0px;
 	padding-left: 0px;
@@ -903,11 +904,11 @@ a.button-feedback {
 }
 
 .socials-list svg:hover path{
-	fill-opacity: 1;
+	opacity: 0.5;
 }
 
 .socials-list svg:active path{
-	fill-opacity: 1;
+	opacity: 0.7;
 }
 
 .socials-list li {
@@ -915,7 +916,7 @@ a.button-feedback {
 }
 
 .main-information-list {
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-left: 25px;
 	width: 350px;
 	align-self: center;
@@ -942,31 +943,40 @@ a.button-feedback {
 }
 
 .catalog-list {
-	width: 1180px;
+	width: 1140px;
 	padding-left: 0px;
+	margin-left: 0px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 
 .pagination {
 	margin-left: auto;
 	margin-top: 40px;
-	width: 204px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-end;
+	padding: 0px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	padding-bottom: 30px;
 }
 
 .pagination a { 
 	width: 26px;
 	height: 24px;
+	margin-left: 5px;
 	padding: 4px 8px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
 	text-align: center;
 	text-decoration: none;
+}
+
+.pagination a.button-forward {
+	padding-right: 0px;
+	padding-left: 12px;
 }
 
 .catalog-page-active {
@@ -1141,7 +1151,7 @@ a.button-feedback {
 	border: 8px solid #ffffff;
 	background-color: #ababab;
 	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
+	box-shadow: 0 4px 2px 0 rgba(171,171,171,.8);
 	cursor: pointer;
 }
 
@@ -1227,6 +1237,7 @@ input::-webkit-inner-spin-button {
 .slide-title {
 	width: 700px;
 	margin: 0 auto;
+	padding-top: 5px;
 	margin-bottom: 35px;
 	font-size: 60px;
 	line-height: 60px;
@@ -1348,7 +1359,7 @@ input::-webkit-inner-spin-button {
 
 .hits-list li,
 .catalog-list li {
-	width: 293px;
+	width: 263px;
 	margin-left: 0px;
 	text-align: center;
 	position: relative;
@@ -1382,10 +1393,10 @@ input::-webkit-inner-spin-button {
 .product:hover::after {
 	position: absolute;
 	content: "";
-	left: 0px;
-	top: 0px;
-	right: -0px;
-	bottom: -46px;
+	left: -6px;
+	top: -6px;
+	right: -6px;
+	bottom: -56px;
 	z-index: -1;
 	background: rgba(255,255,255, 0.2);
     border-radius: 4px;
@@ -1403,7 +1414,7 @@ input::-webkit-inner-spin-button {
 	content: url(../img/hit.png);
 	position: absolute;
 	top: 0px;
-	left: 10px;
+	left: 0px;
 	width: 61px;
 	height: 61px;
 }
@@ -1412,7 +1423,7 @@ input::-webkit-inner-spin-button {
 .catalog-list p {
 	position: absolute;
 	top: 175px;
-	left: 10px;
+	left: 0px;
 }
 
 .catalog-list p {
@@ -1516,7 +1527,7 @@ input::-webkit-inner-spin-button {
 	margin-top: 20px;
 	padding: 15px;
 	width: 241px;
-	height: 44px;
+	min-height: 44px;
 	background: #FFFFFF;
 	border: 1px solid #D3D3D2;
 	box-sizing: border-box;
@@ -1550,7 +1561,7 @@ input::-webkit-inner-spin-button {
 	margin-top: 20px;
 	padding: 15px;
 	width: 267px;
-	height: 44px;
+	min-height: 44px;
 	background: #FFFFFF;
 	border: 1px solid #D3D3D2;
 	box-sizing: border-box;
@@ -1563,7 +1574,7 @@ input::-webkit-inner-spin-button {
 	padding-top: 16px;
 	margin-top: 20px;
 	width: 428px;
-	height: 154px;
+	min-height: 154px;
 	background: #FFFFFF;
 	border: 1px solid rgba(178, 178, 178, 0.52);
 	box-sizing: border-box;
@@ -1699,14 +1710,16 @@ input::-webkit-inner-spin-button {
 .login input:hover,
 .feedback input:hover,
 .feedback-input:hover {
-	border: 2px solid rgba(178, 178, 178, 0.52);
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	box-shadow: 0px 0px 0px 1px rgba(178, 178, 178, 0.52);
 }
 
 .search-popup input:focus,
 .login input:focus,
 .feedback input:focus,
 .feedback-input:focus {
-	border: 2px solid rgba(46, 136, 228, 0.52);
+	border: 1px solid rgba(46, 136, 228, 0.52);
+	box-shadow: 0px 0px 0px 1px rgba(178, 178, 178, 0.52);
 }
 
 .search-popup input,
