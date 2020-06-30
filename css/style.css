@@ -178,6 +178,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog  {
+	margin-top: 32px;
 	text-decoration: underline;
 }
 
@@ -188,7 +189,6 @@ input[type="radio"].visually-hidden {
 }
 
 .new a {
-	margin-left: 10px;
 	font-weight: bold;
 	line-height: 18px;
 }
@@ -223,6 +223,14 @@ input[type="radio"].visually-hidden {
 .main-header nav {
 	padding-top: 9px;
 	position: relative;
+}
+
+.footer-index {
+	margin-top: 12px;
+}
+
+.footer-catalog {
+	margin-top: 2px;
 }
 
 .schedule {
@@ -313,7 +321,7 @@ input[type="radio"].visually-hidden {
 .features li {
 	position: relative;
 	width: 480px;
-	margin-bottom: 22px;
+	margin-bottom: 25px;
 }
 
 .features svg {
@@ -710,7 +718,7 @@ a.button-feedback {
 
 .button-filter {
 	align-self: center;
-	margin-top: 7px;
+	margin-top: 20px;
 	color: var(--basic-white);
 	width: 144px;
 	height: 36px;
@@ -889,12 +897,6 @@ a.button-feedback {
 	justify-content: space-between;
 }
 
-.footer-catalog .socials,
-.footer-catalog .main-information-list,
-.footer-catalog .academy{
-	padding-top: 5px;
-}
-
 .socials-list {
 	margin-left: 0px;
 	padding-left: 0px;
@@ -953,13 +955,13 @@ a.button-feedback {
 
 .pagination {
 	margin-left: auto;
-	margin-top: 40px;
+	margin-top: 38px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	padding: 0px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	padding-bottom: 30px;
+	padding-bottom: 32px;
 }
 
 .pagination a { 
@@ -1019,7 +1021,11 @@ a.button-feedback {
 }
 
 .filter div {
-	margin-bottom: 7px;
+	margin-bottom: 5px;
+}
+
+.filter .fill {
+	margin-top: 2px;
 }
 
 .name-filter {
@@ -1042,7 +1048,7 @@ a.button-feedback {
 }
 
 .radio {
-	padding-left: 20px;
+	padding-left: 25px;
 }
 
 .radio-box {
@@ -1070,7 +1076,7 @@ a.button-feedback {
 }
 
 .check {
-	padding-left: 20px;
+	padding-left: 25px;
 }
 
 .check-box {
@@ -1103,7 +1109,7 @@ a.button-feedback {
 .range-filter {
 	width: 218px;
 	height: 36px;
-	margin-top: 7px;
+	margin-top: 0px;
 }
 
 .filter-item legend {
@@ -1118,10 +1124,10 @@ a.button-feedback {
 	position: relative;
 	background: rgba(255, 255, 255, 0.2); 
 	height: 19px;
-	padding-top: 17px;
+	padding-top: 15px;
 	padding-right: 21px;
 	padding-left: 21px;
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 	border-radius: 25px;
 }
 
@@ -1137,13 +1143,13 @@ a.button-feedback {
 }
 
 .range-controls .bar {
-	width: 50%;
+	width: 60%;
 	margin-left: 10%
 }
 
 .range-controls .toggle {
 	position: absolute;
-	top: 9px;
+	top: 6px;
 	left: 0;
 	width: 4px;
 	height: 4px;
@@ -1164,7 +1170,7 @@ a.button-feedback {
 }
 
 .range-controls .toggle-max {
-	left:119px;
+	left:132px;
 }
 
 .price-controls input {
@@ -1546,8 +1552,8 @@ input::-webkit-inner-spin-button {
 	padding-bottom: 25px;
 	color: var(--basic-black);
 	padding-top: 15px;
-	padding-left: 23px;
-	width: 477px;
+	padding-left: 25px;
+	width: 455px;
 	background: #F8F7F4;
 	border-radius: 6px;
 }
@@ -1561,7 +1567,7 @@ input::-webkit-inner-spin-button {
 	margin-top: 20px;
 	padding: 15px;
 	width: 267px;
-	min-height: 44px;
+	max-height: 44px;
 	background: #FFFFFF;
 	border: 1px solid #D3D3D2;
 	box-sizing: border-box;
@@ -1570,8 +1576,8 @@ input::-webkit-inner-spin-button {
 
 .feedback-input {
 	resize: none;
-	padding-left: 14px;
-	padding-top: 16px;
+	padding-left: 15px;
+	padding-top: 11px;
 	margin-top: 20px;
 	width: 428px;
 	min-height: 154px;
@@ -1584,8 +1590,8 @@ input::-webkit-inner-spin-button {
 .feedback button {
 	display: block;
 	margin-left: auto;
-	margin-top: 25px;
-	padding: 14px 24px;
+	margin-top: 20px;
+	padding: 10px 24px;
 }
 
 .feedback .cross {
@@ -1604,8 +1610,8 @@ input::-webkit-inner-spin-button {
 .feedback .cross {
 	width: 20px;
 	height: 25px;
-	margin-left: 90px;
-	margin-bottom: 10px;
+	margin-left: 65px;
+	margin-bottom: 3px;
 }
 
 .cart {
