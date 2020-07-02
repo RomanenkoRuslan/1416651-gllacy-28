@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 /*Variables*/
 
 :root {
@@ -57,7 +64,8 @@ input[type="radio"].visually-hidden {
 	border: 0;
 	padding: 0;
 	white-space: nowrap;
-	clip-path: inset(100%);
+	-webkit-clip-path: inset(100%);
+	        clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -753,7 +761,6 @@ a.button-feedback {
 	border-radius: 20px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	-ms-appearance: none;
 	appearance: none;
 }
 
@@ -826,6 +833,7 @@ a.button-feedback {
 
 .main {
 	display: grid;
+	grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
 	grid-template-rows: min-content 1fr min-content;
 	align-content: flex-start;
 }
@@ -839,6 +847,7 @@ a.button-feedback {
 
 .site-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	padding-top: 5px;
 	padding-left: 11px;
 	flex-direction: row;
@@ -850,6 +859,7 @@ a.button-feedback {
 	position: relative;
 	margin-left: auto;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -878,6 +888,7 @@ a.button-feedback {
 	padding-left: 0;
 	margin: 0px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -901,6 +912,7 @@ a.button-feedback {
 	margin-left: 0px;
 	padding-left: 0px;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-around;
 }
@@ -1734,6 +1746,14 @@ input::-webkit-inner-spin-button {
 .feedback-input {
 	color: var(--basic-black);
 	font-weight: 800;
+}
+
+.search-popup input::-webkit-input-placeholder, .login input::-webkit-input-placeholder, .feedback input::-webkit-input-placeholder, .feedback-input::-webkit-input-placeholder {
+	font-weight: normal;
+}
+
+.search-popup input::-moz-placeholder, .login input::-moz-placeholder, .feedback input::-moz-placeholder, .feedback-input::-moz-placeholder {
+	font-weight: normal;
 }
 
 .search-popup input::placeholder,
