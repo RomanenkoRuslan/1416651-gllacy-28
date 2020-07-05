@@ -136,6 +136,7 @@ input[type="radio"].visually-hidden {
 .dropdown { 
     position: relative;
     display: inline-block;
+    vertical-align: top;
 }
 
 .dropdown-content {
@@ -268,6 +269,7 @@ input[type="radio"].visually-hidden {
 .schedule a {
 	padding-top: 8px;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .schedule p {
@@ -650,6 +652,7 @@ a.basket-active:focus {
 
 .raspberry a {
 	display: inline-block;
+	vertical-align: top;
 	margin-left: 374px;
 	margin-top: 25px;
 	margin-bottom: 20px;
@@ -657,6 +660,7 @@ a.basket-active:focus {
 
 .chocolate a {
 	display: inline-block;
+	vertical-align: top;
 	margin-left: 350px;
 	margin-top: 25px;
 	margin-bottom: 20px;
@@ -1447,6 +1451,7 @@ a.button-feedback {
 
 .product:hover .quick-view {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .catalog-list li {
@@ -1647,6 +1652,7 @@ a.button-feedback {
 
 .feedback .cross {
 	display: inline-block;
+	vertical-align: top;
 	margin: 0; 
 	padding: 0; 
 	border: 0; 

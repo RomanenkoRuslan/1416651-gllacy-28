@@ -34,7 +34,7 @@
           <section class="popup search-popup">
             <h2 class="visually-hidden">Поиск</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" name="search" placeholder="Крем-брюле">
+              <label><input type="search" name="search" placeholder="Крем-брюле"></label>
             </form>
           </section></div></li>
         <li><div class="login-area"><a href="#" class="user-nav-item entrance"><svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg><span>Вход</span></a>
@@ -42,10 +42,10 @@
           <h2 class="visually-hidden">Вход</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <input type="email" name="input-email" placeholder="email@example.com">
+              <label><input type="email" name="input-email" placeholder="email@example.com"></label>
             </p>
             <p>
-              <input type="password" name="password" placeholder="......">
+              <label><input type="password" name="password" placeholder="......"></label>
             </p>
             <div class="flex-login">
               <button type="submit" class="button">Войти</button>
@@ -106,12 +106,13 @@
       <div class="filter-top">
       	<p class="name-filter">Сортировка:</p>
         <div class="select-box">
-        <select name="filter gray-field" class="select">
-          <option value="popular" class="popular">по популярности</option>
-          <option value="cheap">сначала недорогие</option>
-          <option value="expensive">сначала дорогие</option>
-          <option value="fat">по жирности</option>
-        </select>
+        <label>
+          <select name="filter gray-field" class="select">
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fat">по жирности</option>
+          </select>
+        </label>
         </div>
       </div> 
       <div>
