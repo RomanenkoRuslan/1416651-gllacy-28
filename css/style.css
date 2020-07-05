@@ -1594,9 +1594,8 @@ a.button-feedback {
 	background: #F8F7F4;
 	border-radius: 6px;
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: 20%;
+	left: 38%;
 }
 
 .feedback-show {
